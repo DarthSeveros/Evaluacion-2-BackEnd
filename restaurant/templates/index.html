@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block title %}Inicio{% endblock %}
+
+{% block body%}
+
+<div class="alert alert-info display-1 text-center">Bienvenido a tu gestor de reservas</div>
+<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+    <a href="{% url 'listado_reservas' %}" class="btn p-3 btn-primary w-100">Listado de reservas</a>
+    <a href="{% url 'agendar_reserva' %}" class="btn p-3 btn-primary w-100">Agendar reserva</a>
+</div>
+
+
+{% endblock %}
